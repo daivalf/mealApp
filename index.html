@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipedia</title>
+  <link rel="icon" href="icons/breakfast.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+  <div class="header" id="banner" align="center">
+    <h1>Pencari Resep Makanan</h1>
+  </div>
+
+  <div class="container d-flex justify-content-center">
+    <div class="notification"> </div>
+    <div class="weather-container">
+        <div class="weather-icon">
+            <img src="icons/unknown.png" alt="">
+        </div>
+        <div class="temperature-value">
+            <p>- °<span>C</span></p>
+        </div>
+        <div class="temperature-description">
+            <p> - </p>
+        </div>
+        <div class="location">
+            <p>-</p>
+        </div>
+    </div>
+  </div>
+  <div class="caption">
+    <p></p>
+  </div>
+
+  <div class = "container1">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+
+        <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Masukkan bahan makanan" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+        <blockquote>Gunakan bahasa inggris pada pencarian!</blockquote>
+        <cite>- co : chicken, beef, ginger, lime -</cite>
+      </div>
+
+      <div class = "meal-result">
+        <div id= "meal">
+
+        </div>
+      </div>
+
+
+      <div class = "meal-details">
+
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+        
+        <div class = "meal-details-content">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src = "script.js"></script>
+</body>
+</html>
